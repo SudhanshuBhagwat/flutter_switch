@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'dart:math' as math;
 
+import 'package:nintendo_switch/components/SamllButton.dart';
+
 class FourButtons extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -15,81 +17,21 @@ class FourButtons extends StatelessWidget {
               padding: const EdgeInsets.all(10.0),
               child: Stack(
                 children: [
-                  Align(
+                  SmallButton(
+                    size: constraints.maxWidth * 0.23,
                     alignment: Alignment.topRight,
-                    child: ClipOval(
-                      child: Container(
-                        height: constraints.maxWidth * 0.23,
-                        width: constraints.maxWidth * 0.23,
-                        decoration: BoxDecoration(
-                          color: Colors.grey[700],
-                          border: Border.all(
-                            color: Colors.black,
-                            width: 2.0,
-                          ),
-                          borderRadius: BorderRadius.all(
-                            Radius.circular(10.0),
-                          ),
-                        ),
-                      ),
-                    ),
                   ),
-                  Align(
+                  SmallButton(
+                    size: constraints.maxWidth * 0.23,
                     alignment: Alignment.topLeft,
-                    child: ClipOval(
-                      child: Container(
-                        height: constraints.maxWidth * 0.23,
-                        width: constraints.maxWidth * 0.23,
-                        decoration: BoxDecoration(
-                          color: Colors.grey[700],
-                          border: Border.all(
-                            color: Colors.black,
-                            width: 2.0,
-                          ),
-                          borderRadius: BorderRadius.all(
-                            Radius.circular(10.0),
-                          ),
-                        ),
-                      ),
-                    ),
                   ),
-                  Align(
+                  SmallButton(
+                    size: constraints.maxWidth * 0.23,
                     alignment: Alignment.bottomRight,
-                    child: ClipOval(
-                      child: Container(
-                        height: constraints.maxWidth * 0.23,
-                        width: constraints.maxWidth * 0.23,
-                        decoration: BoxDecoration(
-                          color: Colors.grey[700],
-                          border: Border.all(
-                            color: Colors.black,
-                            width: 2.0,
-                          ),
-                          borderRadius: BorderRadius.all(
-                            Radius.circular(10.0),
-                          ),
-                        ),
-                      ),
-                    ),
                   ),
-                  Align(
+                  SmallButton(
+                    size: constraints.maxWidth * 0.23,
                     alignment: Alignment.bottomLeft,
-                    child: ClipOval(
-                      child: Container(
-                        height: constraints.maxWidth * 0.23,
-                        width: constraints.maxWidth * 0.23,
-                        decoration: BoxDecoration(
-                          color: Colors.grey[700],
-                          border: Border.all(
-                            color: Colors.black,
-                            width: 2.0,
-                          ),
-                          borderRadius: BorderRadius.all(
-                            Radius.circular(10.0),
-                          ),
-                        ),
-                      ),
-                    ),
                   ),
                 ],
               ),
